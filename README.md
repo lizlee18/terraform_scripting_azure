@@ -240,7 +240,7 @@ variable subnet_<id_subnet>_username {
 
   Donde `<id_subnet>` es el número de la subred creada y `<nombre_usuario_ssh>` el nombre del usuario para acceso SSH.
 
-````
+-----
 
 ## Archivo `vm_linux.txt`
 
