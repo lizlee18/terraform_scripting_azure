@@ -44,17 +44,21 @@
 
 ## Conexión a Azure
 
-* Ejecuta `az login` para habilitar la conexión con Azure y sigue las indicaciones.
-* Sigue las instrucciones del sitio `https://microsoft.com/devicelogin` e ingresar el código
+* Ejecuta `az login --service-principal --username APP_ID --password PASSWORD --tenant TENANT_ID`
+* Donde los valores `APP_ID`, `PASSWORD` y `TENANT_ID` serán facilitados el día de la capacitación
 
 -----
 
-## Configuraciones previas en Azure
+## Exportación de variables de ambiente para uso de Terraform
 
-* Desde la línea de comando ejecuta el siguiente comando para listar las suscripciones:
-`az account list --output table`
-* Para cambiar la suscripción, ejecuta este comando:
-`az account set --subscription "<id-suscripción>"`
+* En la línea de comandos y con la información compartida el día de la capacitación hay que exportar la siguientes variables de ambiente para que se pueda ejecutar Terraform:
+
+````
+   export ARM_SUBSCRIPTION_ID="<valor_brindado_día_de_la_capacitación>"
+   export ARM_CLIENT_ID="<valor_brindado_día_de_la_capacitación>"
+   export ARM_CLIENT_SECRET="<valor_brindado_día_de_la_capacitación>"
+   export ARM_TENANT_ID="<valor_brindado_día_de_la_capacitación>"
+````
 
 -----
 
