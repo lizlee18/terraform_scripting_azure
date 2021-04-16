@@ -120,6 +120,38 @@ variable subnet_1_ipam {
   description = "subnet cidr range"
   default     = ["10.8.1.0/24"]
 }
+variable subnet_2_name {
+  description = "subnet name"
+  default     = "lizlee-2"
+}
+
+variable subnet_2_ipam {
+  description = "subnet cidr range"
+  default     = ["10.8.2.0/24"]
+}
+
+
+variable subnet_3_name {
+  description = "subnet name"
+  default     = "lizlee-3"
+}
+
+variable subnet_3_ipam {
+  description = "subnet cidr range"
+  default     = ["10.8.3.0/24"]
+}
+
+
+variable subnet_4_name {
+  description = "subnet name"
+  default     = "lizlee-4"
+}
+
+variable subnet_4_ipam {
+  description = "subnet cidr range"
+  default     = ["10.8.4.0/24"]
+}
+
 
 variable key {
   description = "key"
